@@ -59,6 +59,7 @@ namespace TibiaBotMarcelo
                 MessageBox.Show("Não existe está janela");
             }
             
+
         }
 
 
