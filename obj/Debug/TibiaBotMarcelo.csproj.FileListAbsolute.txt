@@ -1,0 +1,17 @@
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\bin\Debug\TibiaBotMarcelo.exe.config
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\bin\Debug\TibiaBotMarcelo.exe
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\bin\Debug\TibiaBotMarcelo.pdb
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo.csprojResolveAssemblyReference.cache
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\MainWindow.g.cs
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\App.g.cs
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo_MarkupCompile.cache
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo_MarkupCompile.lref
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\MainWindow.baml
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo.g.resources
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo.Properties.Resources.resources
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo.csproj.GenerateResource.Cache
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo.exe
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo.pdb
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\bin\Debug\WindowsAPI.dll
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo.csproj.CoreCompileInputs.cache
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo.csproj.CopyComplete
