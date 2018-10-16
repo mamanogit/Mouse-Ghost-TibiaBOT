@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TibiaBotMarcelo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="725" BorderBrush="#FFC94248" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}">
+        x:Name="WindowBotMain"
+        Title="MainWindow" Height="450" Width="725" BorderBrush="#FFC94248" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}" AllowsTransparency="True" WindowStyle="None" Visibility="Visible" Opacity="1">
     <Grid>
         <Label x:Name="label" Content="Martelo's        B O T" Margin="10,25,0,0" FontSize="36" Foreground="White"  Width="700" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="LuzSans-Book" FontWeight="Bold">
             <Label.Background>
@@ -25,13 +26,15 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
-        <Label x:Name="lblPosClick" Content="Label" HorizontalAlignment="Left" Margin="350,182,0,0" VerticalAlignment="Top" Width="125"/>
-        <Button x:Name="button" Content="MoveXY" HorizontalAlignment="Left" Margin="260,185,0,0" VerticalAlignment="Top" Width="75" Click="button_Click" Background="#FF128881" FontSize="14" Foreground="White"/>
+        <Button x:Name="btnRec" Content="MoveXY" HorizontalAlignment="Left" Margin="260,185,0,0" VerticalAlignment="Top" Width="75" Click="btnRec_Click" Background="#FF128881" FontSize="14" Foreground="White"/>
         <Label x:Name="lblWidthTotal" Content="Label" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblHeightTotal" Content="Label" HorizontalAlignment="Left" Margin="69,104,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label1" Content="x" HorizontalAlignment="Left" Margin="48,104,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtWindow" HorizontalAlignment="Left" Height="23" Margin="130,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" FontSize="11" Background="#FFC98FFF" Foreground="#FF300D51" TextAlignment="Center"/>
         <Button x:Name="btbCheckWindow" Content="Verifica Janela Exists" HorizontalAlignment="Left" Margin="260,103,0,0" VerticalAlignment="Top" Width="110" Height="27" Background="#FF300D51" Foreground="White" FontSize="11" Click="btbCheckWindow_Click"/>
+
+        <Label x:Name="lblTitleWindow" Content="Title Window(Not Defined)" HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top" Height="23"/>
+        <ListBox x:Name="lstRec" HorizontalAlignment="Left" Height="150" Margin="260,230,0,0" VerticalAlignment="Top" Width="125"/>
 
     </Grid>
 </Window>

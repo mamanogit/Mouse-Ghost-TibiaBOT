@@ -15,3 +15,4 @@ C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarce
 C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\bin\Debug\WindowsAPI.dll
 C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo.csproj.CoreCompileInputs.cache
 C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo.csproj.CopyComplete
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo_Content.g.cs

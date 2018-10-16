@@ -17,46 +17,51 @@ namespace TibiaBotMarcelo
     /// </summary>
     public partial class MainWindow : System.Windows.Window
     {
+        public IntPtr WindowMain;
+
         public MainWindow()
         {
             InitializeComponent();
-
-            AddHandler(FrameworkElement.MouseDownEvent, new MouseButtonEventHandler(clickMouse), true);
 
             lblWidthTotal.Content = WindowsAPI.Desktop.GetWidth();
             lblHeightTotal.Content = WindowsAPI.Desktop.GetHeight();
         }
 
-        public String RetornaValorXY()
+
+        public Point RetornaValorXY()
         {
             Point getpos = PointToScreen(System.Windows.Input.Mouse.GetPosition(this));
 
-            return getpos.ToString();
-        }
-        private void clickMouse(object sender, RoutedEventArgs e)
-        {
-           
-                //MessageBox.Show("LoL");
-                lblPosClick.Content = RetornaValorXY();
-            
-           
+            return getpos;
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void btnRec_Click(object sender, RoutedEventArgs e)
         {
+          WindowBotMain.Opacity = 0.4;
+          AddHandler(FrameworkElement.MouseDownEvent, new MouseButtonEventHandler(InsertListRec), true);
+        }
 
-            
+
+
+        private void InsertListRec(object sender, RoutedEventArgs e)
+        {
+            lstRec.Items.Add(RetornaValorXY());
+            //RetornaValorXY();
         }
 
         private void btbCheckWindow_Click(object sender, RoutedEventArgs e)
         {
             if (WindowsAPI.Window.DoesExist(txtWindow.Text))
             {
-                MessageBox.Show("Existe a janela");
+                WindowMain = WindowsAPI.Window.Get(txtWindow.Text);
+                MessageBox.Show("Existe a janela: " + WindowsAPI.Window.GetTitle(WindowMain));
+                lblTitleWindow.Content = WindowsAPI.Window.GetTitle(WindowMain);
+                WindowsAPI.Window.SetTitle(WindowMain, "MARCELO's BOT - INJECT SUCCESS");
+
             }
             else
             {
-                MessageBox.Show("Não existe está janela");
+                MessageBox.Show("Está janela não existe: "+ txtWindow.Text);
             }
             
 
