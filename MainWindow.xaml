@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:TibiaBotMarcelo"
         mc:Ignorable="d"
         x:Name="WindowBotMain"
+        KeyDown="Stop"
         Title="MainWindow" Height="450" Width="725" BorderBrush="#FFC94248" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}" AllowsTransparency="True" WindowStyle="None" Visibility="Visible" Opacity="1">
     <Grid>
         <Label x:Name="label" Content="Martelo's        B O T" Margin="10,25,0,0" FontSize="36" Foreground="White"  Width="700" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="LuzSans-Book" FontWeight="Bold">
@@ -26,15 +27,31 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
-        <Button x:Name="btnRec" Content="MoveXY" HorizontalAlignment="Left" Margin="260,185,0,0" VerticalAlignment="Top" Width="75" Click="btnRec_Click" Background="#FF128881" FontSize="14" Foreground="White"/>
+        <Button x:Name="btnRec" Content="REC" HorizontalAlignment="Left" Margin="135,230,0,0" VerticalAlignment="Top" Width="120" Click="btnRec_Click" Background="#FFFF4A4A" FontSize="14" Foreground="White">
+        </Button>
         <Label x:Name="lblWidthTotal" Content="Label" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblHeightTotal" Content="Label" HorizontalAlignment="Left" Margin="69,104,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label1" Content="x" HorizontalAlignment="Left" Margin="48,104,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtWindow" HorizontalAlignment="Left" Height="23" Margin="130,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" FontSize="11" Background="#FFC98FFF" Foreground="#FF300D51" TextAlignment="Center"/>
-        <Button x:Name="btbCheckWindow" Content="Verifica Janela Exists" HorizontalAlignment="Left" Margin="260,103,0,0" VerticalAlignment="Top" Width="110" Height="27" Background="#FF300D51" Foreground="White" FontSize="11" Click="btbCheckWindow_Click"/>
+        <TextBox x:Name="txtWindow" HorizontalAlignment="Left" Height="23" Margin="130,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="11" Background="#FFC98FFF" Foreground="#FF300D51" TextAlignment="Center"/>
+        <Button x:Name="btbCheckWindow" Content="CHECK WINDOW" HorizontalAlignment="Left" Margin="260,103,0,0" VerticalAlignment="Top" Width="110" Height="27" Background="#FF300D51" Foreground="White" FontSize="11" Click="btbCheckWindow_Click"/>
 
         <Label x:Name="lblTitleWindow" Content="Title Window(Not Defined)" HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top" Height="23"/>
-        <ListBox x:Name="lstRec" HorizontalAlignment="Left" Height="150" Margin="260,230,0,0" VerticalAlignment="Top" Width="125"/>
+        <ListBox x:Name="lstRec" HorizontalAlignment="Left" Height="150" Margin="260,230,0,0" VerticalAlignment="Top" Width="125" IsEnabled="False"/>
+        <Button x:Name="btnPush" Content="START PUSH" HorizontalAlignment="Left" Margin="135,258,0,0" VerticalAlignment="Top" Width="121" Background="#FF3BB91E" Foreground="White" Click="btnPush_Click" Height="25"/>
+        <CheckBox x:Name="chkPushLoop" Content="Loop Push" HorizontalAlignment="Left" Margin="260,385,0,0" VerticalAlignment="Top" Width="125"/>
+        <Button x:Name="btnClearRecord" Content="CLEAR RECORD" HorizontalAlignment="Left" Margin="260,417,0,0" VerticalAlignment="Top" Width="125" Background="#FFECC02A" Foreground="White" Height="23" Click="btnClearRecord_Click"/>
+        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="100" Margin="550,315,0,0" VerticalAlignment="Top" Width="130" IsEnabled="False">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="alt + f2 pause loop"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
 
     </Grid>
-</Window>
+
+    <Window.InputBindings>
+        <KeyBinding Gesture="Ctrl+Alt+Add" Command="{Binding IncrementCommand}"
+                    HotkeyManager.RegisterGlobalHotkey="True" />
+    </Window.InputBindings>
+</Window>   

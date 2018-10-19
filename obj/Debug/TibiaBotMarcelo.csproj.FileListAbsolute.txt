@@ -16,3 +16,5 @@ C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\bin\Debug\WindowsAPI.dl
 C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo.csproj.CoreCompileInputs.cache
 C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo.csproj.CopyComplete
 C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\obj\Debug\TibiaBotMarcelo_Content.g.cs
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\bin\Debug\NHotkey.dll
+C:\Users\Marcelo\Desktop\TibiaBotMarcelo\TibiaBotMarcelo\bin\Debug\NHotkey.Wpf.dll
